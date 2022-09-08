@@ -20,7 +20,7 @@ const ContactForm = () => {
             email: email,
             message: message
         }).then(()=>{
-            if(!alert("Uspješno poslano!")) document.location = 'https://stellar-centaur-7ecf0b.netlify.app/contact'
+            if(!alert("Uspješno poslano!")) document.location = '/contact'
         }).catch((error)=>{
             alert(error.message)
         })
