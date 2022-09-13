@@ -10,16 +10,18 @@ function Footer() {
                     <div className='footer-link-wrapper'>
                         <div class='footer-link-items'>
                             <h2>Contact Us</h2>
-                            <Link to='/'>Contact</Link>
-                            <Link to='/'>Support</Link>
+                            <Link to='/contact'>Contact</Link>
                         </div>
                     </div>
                     <div className='footer-link-wrapper'>
                         <div class='footer-link-items'>
                             <h2>Social Media</h2>
-                            <Link to='/'>Instagram</Link>
-                            <Link to='/'>Facebook</Link>
-                            <Link to='/'>Twitter</Link>
+                            <a href="https://www.instagram.com/river.sidecottage/" target="_blank" rel="noreferrer">
+                                Instagram
+                            </a>
+                            <a href="https://www.facebook.com/Riverside-Cottage-102327212637208" target="_blank" rel="noreferrer">
+                            Facebook
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -41,22 +43,6 @@ function Footer() {
                             aria-label='Instagram'
                             >
                             <i class='fab fa-instagram' />
-                            </Link>
-                            <Link
-                            class='social-icon-link twitter'
-                            to='/'
-                            target='_blank'
-                            aria-label='Twitter'
-                            >
-                            <i class='fab fa-twitter' />
-                            </Link>
-                            <Link
-                            class='social-icon-link twitter'
-                            to='/'
-                            target='_blank'
-                            aria-label='LinkedIn'
-                            >
-                            <i class='fab fa-linkedin' />
                             </Link>
                         </div>
                     </div>

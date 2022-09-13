@@ -3,6 +3,7 @@ import Title from "./Title";
 import {FaHiking} from 'react-icons/fa';
 import {GiWaterfall,GiCaveEntrance} from 'react-icons/gi';
 import {BiWine} from 'react-icons/bi';
+
 export default class Activities extends Component {
     state = {activities: [
         {
