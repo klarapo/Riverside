@@ -329,7 +329,7 @@
   
   @media screen and (max-width: 576px) {
     .card {
-      width:30rem;
+      padding: 0px 10px;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     .card-img{
