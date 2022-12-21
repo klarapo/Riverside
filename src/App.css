@@ -541,6 +541,16 @@
   }
   /* end of roomlist */
 
+
+ .contactform {
+    display: flex;
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
 .contact{
-  padding: 50px 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
