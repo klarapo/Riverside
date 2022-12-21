@@ -115,7 +115,7 @@
   .nav-links {
     height: 0;
     margin-top: 2rem;
-    overflow:auto;
+    overflow: hidden;
     transition: var(--mainTransition);
     list-style-type: none;
   }
@@ -133,9 +133,6 @@
   .nav-links a:hover {
     color: var(--primaryColor);
   }
-  .nav-links a:active {
-    border-bottom: 3px solid black;
-  }
   
   .show-nav {
     height: 100px;
@@ -152,13 +149,11 @@
     .nav-links {
       height: auto;
       display: flex;
+      margin-left: 4rem;
     }
     .nav-links a {
       margin: 0 1rem;
       padding: 0.5rem 0;
-    }
-    .show-nav {
-      height: 300px;
     }
   }
   /* end of navbar */
@@ -247,19 +242,14 @@
   /* end of Title */
   
   /* activities */
-  .activities, .location, .featuredrooms, .room {
+  .activities {
     padding: 5rem 0;
   }
-  .activities, .location {
+  .activities {
     background: var(--darkGrey);
     text-align: center;
   }
-  .featuredrooms, .room{
-    background: var(--offWhite);
-    text-align: center;
-  }
-  
-  .activities-center, .location-center, .featuredrooms-center {
+  .activities-center {
     width: 90vw;
     margin: 0 auto;
     display: grid;
@@ -267,36 +257,28 @@
     grid-row-gap: 2rem;
     grid-column-gap: 50px;
   }
-  .room-center {
-    width: 90vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-row-gap: 2rem;
-    grid-column-gap: 50px;
-  }
-  .activities span, .location span, .featuredrooms span, .room span {
+  .activities span {
     display: inline-block;
     color: var(--primaryColor);
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
-  .activities h6, .location h6, .featuredrooms h6, .room h6  {
+  .activities h6 {
     letter-spacing: var(--mainSpacing);
   }
-  .activities p, .location p, .featuredrooms p .room p {
+  .activities p {
     width: 80%;
     margin: 0 auto;
   }
   @media screen and (min-width: 992px) {
-    .activities-center, .location-center, .featuredrooms-center, .room-center {
+    .activities-center {
       width: 95vw;
       max-width: 1170px;
     }
   }
   
   @media screen and (min-width: 1200px) {
-    .activities p, .location p, .featuredrooms p, .room p {
+    .activities p {
       width: 100%;
     }
   }
@@ -328,18 +310,12 @@
   }
   
   @media screen and (max-width: 576px) {
-    .card {
-      padding: 5px 11px;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
     .card-img{
-      width: 60%;
-      margin: 0 auto;
+      width: 100%;
     }
     .card-group{
       padding: 0.5rem;
-      width: 60vw;
-      margin: 0 auto;
+      width: 30vw;
     }
   }
   @media screen and (min-width: 992px) {
@@ -389,7 +365,7 @@
   .room:hover {
     box-shadow: var(--darkShadow);
   }
-
+  
   .img-container {
     position: relative;
   }
@@ -445,7 +421,7 @@
   }
   /* end of room  */
   /* single room*/
-
+  
   .single-room {
     padding: 5rem 0 0 0;
   }
@@ -483,7 +459,7 @@
     text-transform: capitalize;
     letter-spacing: var(--mainSpacing);
   }
-
+  
   .info h6 {
     font-weight: 300;
   }
@@ -531,7 +507,7 @@
     grid-row-gap: 2rem;
     grid-column-gap: 30px;
   }
-
+  
   @media screen and (min-width: 776px) {
     .roomslist-center {
       width: 90vw;
@@ -544,72 +520,3 @@
     }
   }
   /* end of roomlist */
-  /*  rooms fitler*/
-  .filter-container {
-    padding: 5rem 0;
-  }
-  .filter-form {
-    width: 60vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
-    grid-row-gap: 2rem;
-    grid-column-gap: 40px;
-  }
-  .form-group {
-    text-transform: capitalize;
-  }
-  .form-group label {
-    display: block;
-    letter-spacing: var(--mainSpacing);
-    margin-bottom: 0.5rem;
-  }
-  .form-control {
-    width: 100%;
-    background: transparent;
-    font-size: 1rem;
-  }
-  .size-inputs {
-    display: flex;
-  }
-  .size-input {
-    width: 40%;
-    padding: 0.2rem;
-    border: 1px solid var(--mainBlack);
-    border-radius: 0.3rem;
-    margin-right: 0.3rem;
-  }
-  .single-extra label {
-    display: inline-block;
-    font-size: 0.8rem;
-    margin-left: 0.5rem;
-  }
-  @media screen and (min-width: 776px) {
-    .filter-form {
-      width: 70vw;
-    }
-  }
-  @media screen and (min-width: 992px) {
-    .filter-form {
-      width: 95vw;
-      max-width: 1170px;
-    }
-  }
-  /* end of rooms fitler*/
-  .contactform {
-    display: flex;
-    width: 100%;
-    max-width: 60%;
-    margin: 0 auto;
-    justify-content: center;
-} 
-
-.contact{
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
- @media screen and (min-width: 776px) {
-    .footer-links{
-        margin-left 10px;
-    }
-}
