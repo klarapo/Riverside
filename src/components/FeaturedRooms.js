@@ -7,15 +7,15 @@ import Featured3 from '../images/room-4.jpeg';
 export default class FeaturedRooms extends Component {
     state = {featuredrooms: [
         {
-            image: <a href='/room'> <img src={Featured1} alt="Room Eva" width="300px" height="200px" /></a>,
+            image: <a href='./room'> <img src={Featured1} alt="Room Eva" width="300px" height="200px" /></a>,
             title: "Room Eva",
         },
         {
-            image: <a href='/room'> <img src={Featured2} alt="Room Alberto" width="300px" height="200px" /></a>,
+            image: <a href='./room'> <img src={Featured2} alt="Room Alberto" width="300px" height="200px" /></a>,
             title: "Room Alberto",
         },
         {
-            image: <a href='/room'> <img src={Featured3} alt="Room Nouise" width="300px" height="200px" /></a>,
+            image: <a href='./room'> <img src={Featured3} alt="Room Nouise" width="300px" height="200px" /></a>,
             title: "Room Nouise",
         },
 
