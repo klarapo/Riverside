@@ -387,3 +387,8 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+ @media screen and (min-width: 776px) {
+    .footer-links{
+        padding-left 10px;
+    }
+}
